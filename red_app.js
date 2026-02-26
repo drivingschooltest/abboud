@@ -196,8 +196,8 @@ function showResults() {
   document.getElementById("quizView").classList.add("hidden");
   document.getElementById("resultsView").classList.remove("hidden");
 
-  const phone = localStorage.getItem("quiz_phone") || "03294492 - 03647444 - 79312312";
-  document.getElementById("resultUser").textContent = `Auto Ecole Saliba — ${phone}`;
+  const phone = localStorage.getItem("quiz_phone") || "03850939";
+  document.getElementById("resultUser").textContent = `Abboud Driving School — ${phone}`;
 
   const passed = quiz.score >= 24;
 
@@ -276,9 +276,9 @@ function startNewExam() {
 }
 
 async function init() {
-  const phone = localStorage.getItem("quiz_phone") || "03294492 - 03647444 - 79312312";
+  const phone = localStorage.getItem("quiz_phone") || "03850939";
 
-  document.getElementById("userName").textContent = "Auto Ecole Saliba";
+  document.getElementById("userName").textContent = "Abboud Driving School";
   document.getElementById("userPhone").textContent = phone;
 
   QUESTIONS = await loadQuestions();

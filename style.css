@@ -398,7 +398,7 @@ html[lang="en"] .review-text{
 .landing-hero{
   min-height:100vh;
   position:relative;
-  background-image:url("assets/sa.jpeg");
+  background-image:url("assets/bga.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center top 40%;
@@ -746,7 +746,7 @@ html[lang="en"] .review-text{
 }
 
 .hero-logo img {
-  height: 220px;           /* desktop size - increased */
+  height: 130px;           /* desktop size - increased */
   width: auto;
   display: block;
 }
@@ -760,7 +760,7 @@ html[lang="en"] .review-text{
   }
 
   .hero-logo img {
-    height: 140px;
+    height: 120px; /* smaller logo on mobile */
   }
 }
 
@@ -780,6 +780,8 @@ html[lang="en"] .review-text{
 @media (max-width: 380px){
   .landing-hero{ padding-top:250px; }
   .landing-phone{ font-size:14px; }
+  /* ensure logo isn't too big on very small phones */
+  .hero-logo img{ height:80px; }
 }
 
 /* =========================
@@ -816,5 +818,6 @@ img, svg, picture {
 /* ensure touch targets are large enough on very small screens */
 @media (max-width: 380px){
   .landing-btn{ padding:11px 14px; font-size:15px; }
-  .hero-logo img{ height:140px; }
+  /* keep logo small on smallest devices too */
+  .hero-logo img{ height:100px; }
 }
